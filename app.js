@@ -27,7 +27,7 @@ bot.on('message', async (msg) => {
 
         if (text == '/compliments') {
             await bot.sendMessage(id, randomCompliment())
-            bot.sendSticker(id, randomSticker())
+            return bot.sendSticker(id, randomSticker())
         }
 
         bot.sendMessage(id, ('Я не понимаю ваш запрос'))
